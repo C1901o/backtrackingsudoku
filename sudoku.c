@@ -4,7 +4,7 @@
 int n =9;
 int m = 9;
 
-void mostrar(int matriz[n][n]){
+void mostrar(int matriz[n][n]){ // imprime matriz por consola
 	int i, j= 0;
   	for(i=0;i<n;i++){
     	for(j=0;j<n;j++){
@@ -16,7 +16,7 @@ void mostrar(int matriz[n][n]){
 }
 
 
-void azar(int matriz[n][n]){
+void azar(int matriz[n][n]){ //agregar numeros al alzar a la matriz
 	int i, j,c;
 	int mtemporal=0;
 	for(c=0;c<9;c++){
@@ -32,7 +32,7 @@ void azar(int matriz[n][n]){
 	}
 }
 
-void llenar(int m[n][n]){
+void llenar(int m[n][n]){ // setea la matriz con 0
   int i, j;
   for(i=0;i<n;i++){
     for(j=0;j<n;j++){
@@ -103,7 +103,7 @@ int siguiente(int matriz[m][n]){
 	return matriz[m][n];
 }
 
-void backtracking(int *nodo[n][n],int x,int y){
+void backtracking(int *nodo[n][n],int x,int y){ //resulve la matriz por recursion
    if(rechace(nodo,x,y) == 1){
    		return nodo;
    		printf("rechace retorna %d",nodo);
@@ -123,7 +123,7 @@ void backtracking(int *nodo[n][n],int x,int y){
 }
 
 /*
-void backtracking(<tipo> nodo){
+void backtracking(<tipo> nodo){ //ejmplo de uso
    if(reject(nodo) return;
    if(accept(nodo)){
       output(); //Imprime salida
@@ -137,7 +137,7 @@ void backtracking(<tipo> nodo){
 }
 */
 
-int main() {
+int main() { // funcion inicial
 	
 	int matriz [n][n];
 	int m;
